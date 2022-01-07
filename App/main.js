@@ -5,7 +5,7 @@ const { app, ipcMain, BrowserWindow } = require('electron');
 const { IPC_MESSAGES } = require('./constants');
 
 const { callEndpointWithToken } = require('./fetch');
-const AuthProvider = require('./authProvider');
+const AuthProvider = require('./AuthProvider');
 
 const authProvider = new AuthProvider();
 let mainWindow;
